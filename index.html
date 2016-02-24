@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  <link type="text/javascript" rel="js" href="/js/jQuery.js" />
+  <link type="text/javascript" rel="js" href="/js/helper.js" />
+  <link type="text/javascript" rel="js" href="/js/resumeBuilder.js" />
+
+    <!-- This tells the browser how to read the document. -->
+  <meta charset="utf-8">
+
+  <!-- Tells the browser what the title of this page should be. -->
+  <title>Resume</title>
+    <script language="javascript" type="text/javascript">
+    alert("Welcome to Dan's first javascript Project. This is my version of the Resume Builder. This Project is for my stage 5 submission in Front End Programing. Cameron Pittman, Udacity Course Developer.... '' jQuery is a common JavaScript library for reading and making changes to the DOM and the DOM can change. In fact, JavaScript's power comes from its ability to manipulate the DOM, which is essentially a JavaScript object. When JavaScript makes something interesting happen on a website, it's likely the action happened because JavaScript changed the DOM. jQuery is fast and easy to use, but it doesn't do anything you can't accomplish with vanilla (regular) JavaScript. '' I have learned a lot about syntax through debugging. The course gives you the building blocks but you essentially have to build it on your own. That process helped me understand the flow of data and how HTML is manipulated on the page. I can see there is a lot you can do with javascript and I will definitely dig deeper into it. I am especially interested in responsive design and beautiful Stunning Layouts. These are my resource links I used when I got stuck, https://cloud.google.com/appengine/docs/python/gettingstartedpython27/staticfiles, to figure out how to import my css and java. http://api.jquery.com/category/events/event-object/, to help me with click events. https://cloud.google.com/appengine/docs/python/gettingstartedpython27/uploading, To help me get the app deployed. I had plenty of bugs working on this before and after I got it into the Cloud. I had to figure out how to use java with Jinja.")
+  </script>
+<script type="text/javascript" src="js/jQuery.js"></script>
+
+<script type="text/javascript" src="js/helper.js"></script>
+<!-- Because this app is running on a secure server I had to change http to https to get maps to run.
+When I used the console to debug it, I got the information I needed -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+{% autoescape true %}
+
+<body>
+
+  <div id="main">
+    <div id="header" class="center-content clear-fix">
+      <ul id="topContacts" class="flex-box"></ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="workExperience" class="gray">
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+    <div id="education" class="gray">
+      <h2>Education</h2>
+    </div>
+    <div id="mapDiv">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="lets-connect" class="dark-gray">
+      <h2 class="orange center-text">Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/resumeBuilder.js"></script>
+
+  <script type="text/javascript">
+
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.backgroundColor = 'black';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.backgroundColor = 'black';
+    }
+  </script>
+  </body>
+</html>
+{% endautoescape %}
