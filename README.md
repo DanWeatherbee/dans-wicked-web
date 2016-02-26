@@ -1,4 +1,4 @@
-# dans-wicked-web
+# modify-yourpage
 Let anyone modify your page Project.
 
 Built a Python back end using Google App Engine,
