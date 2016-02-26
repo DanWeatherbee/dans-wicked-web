@@ -1,5 +1,6 @@
 # dans-wicked-web
-Nano Degree Projects
-These are the main files to my JavaScritpt Front End Resume Builder.
-Got my Cloud app running. Its my resume in javascript using a resume builder I created, running in the Cloud. https://resume-1231.appspot.com/
-This app uses the clouds infrastructure made up of a football field of computers. The website is lightning fast and can scale to a million users or more.
+Let anyone modify your page Project.
+
+Built a Python back end using Google App Engine,
+Jinja2 HTML templates,
+and a database to host a web page online and allow user comments.
