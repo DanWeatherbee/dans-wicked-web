@@ -42,7 +42,7 @@ var projects = {
 		"images" : ["images/website.jpg", "images/website2.jpg"]
 	},
 	{
-		"title" : "<a href='https://stage5-1231.appspot.com/'>Stage 4 - Allow Comments</a>",
+		"title" : "<a href='https://cyberdans-project.appspot.com/'>Stage 4 - Allow Comments</a>",
 		"dates" : "2016",
 		"description" : "This is my Allow Comments Project. This app uses the datastore.",
 		"images" : ["images/stage4.jpg", "images/stage4lower.jpg"]
